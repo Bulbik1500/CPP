@@ -1,0 +1,3 @@
+﻿  Palindrom.cpp
+C:\Users\bulbik\source\repos\school\Cpp\Palindrom\Palindrom\Palindrom.cpp(7,32): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+  Palindrom.vcxproj -> C:\Users\bulbik\source\repos\school\Cpp\Palindrom\x64\Debug\Palindrom.exe
