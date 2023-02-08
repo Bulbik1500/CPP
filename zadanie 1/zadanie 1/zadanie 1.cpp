@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <fstream>
 using namespace std;
 
 void zadanie3() {
@@ -90,31 +91,33 @@ void zadanie6(){
 
 }// ta pierdolona hojinka
 
+void file() {
+    string marka, model;
+    int poj;
+    cout << "marke samochodu" << endl;
+    cin >> marka;
+    cout << " podaj model" << endl;
+    cin >> model;
+    cout << "podaj pojemnosc silnika" << endl;
+    cin >> poj;
+    fstream plik;
+    plik.open("auta1.txt", ios::out, ios::app);
+    plik << marka << endl;
+    plik << model << endl;
+    plik << poj << endl;
 
-void drzewoBTS() {
-    /*
-        5 <-- dziel i zyciezaj
-    3       7
-  2   4   6   9
- 1          8   10
-
-
-
-    */
-    //tworzenie tabli drzewa
+    plik.close();
 }
-
 
 int main()
 {
-     /* cout << "Witaj w menu: " << endl;
-    cout << "1 Zadanie3 " << endl;
-    cout << "2 Zadanie4 " << endl;
-    cout << "3 Zadanie5 " << endl;
-    cout << "4 Zadanie6 " << endl;
-    */
-    zadanie6
-    ();
+
+    
+    file();
+    
+    
+    
+    
     return 0;
 }
 
